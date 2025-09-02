@@ -150,6 +150,118 @@
         </div>
     </div>
 
+<!--CARROUSEL-->
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Contenedor que se moverá -->
+            <div class="carousel-slides">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Coche deportivo rojo">
+                    <div class="slide-caption">
+                        <h2>¡Oferta Especial!</h2>
+                        <p>Llévate el nuevo deportivo con un 15% de descuento este mes.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Coche clásico negro">
+                    <div class="slide-caption">
+                        <h2>Últimas Unidades</h2>
+                        <p>El clásico atemporal que todos desean. ¡No te quedes sin el tuyo!</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs2.best-wallpaper.net%2Fwallpaper%2F1440x900%2F1604%2FLamborghini-Huracan-blue-supercar-side-view_1440x900.jpg&f=1&nofb=1&ipt=843038eae698e663e28caada528f60ee5e8e027c4f60669fae131280105e81b8" alt="Superdeportivo azul">
+                    <div class="slide-caption">
+                        <h2>Novedad 2025</h2>
+                        <p>Experimenta la potencia y el diseño de la nueva generación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de Navegación -->
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+
+            <!-- Puntos Indicadores -->
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+<!--CONTACTO-->
+
+    <div class="contact-widget">
+        <!-- El formulario (inicialmente oculto) -->
+        <div class="contact-form-container">
+            <div class="form-header">
+                <h3>¡Contáctanos!</h3>
+                <button class="close-form-btn">&times;</button>
+            </div>
+            <form class="widget-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="submit-form-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <!-- El botón/burbuja que es siempre visible -->
+        <div class="contact-bubble">
+            <!-- Un ícono de sobre, puedes usar una imagen o un SVG si lo prefieres -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </div>
+    </div>
+
+<!-- CATEGORÍAS -->
+
+        <div class="category-section">
+        <h2 class="section-title">Explora por Categoría</h2>
+        <div class="category-grid">
+
+            <!-- Categoría 1: Deportivos -->
+            <a href="#" class="category-card">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Coches Deportivos">
+                <div class="card-overlay"></div>
+                <h3>Deportivos</h3>
+            </a>
+
+            <!-- Categoría 2: SUVs -->
+            <a href="#" class="category-card">
+                <img src="https://images.unsplash.com/photo-1554744512-d6c603f27c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="SUVs">
+                <div class="card-overlay"></div>
+                <h3>SUVs</h3>
+            </a>
+
+            <!-- Categoría 3: Clásicos -->
+            <a href="#" class="category-card">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Coches Clásicos">
+                <div class="card-overlay"></div>
+                <h3>Clásicos</h3>
+            </a>
+
+            <!-- Categoría 4: Eléctricos -->
+            <a href="#" class="category-card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimagenes.diariodenavarra.es%2Fuploads%2F2024%2F10%2F15%2F670e38809e585.jpeg&f=1&nofb=1&ipt=8c2497575b0dae78e9426e1e60d5b15c24eed328c497972bd5635943b03a40a8" alt="Coches Eléctricos">
+                <div class="card-overlay"></div>
+                <h3>Eléctricos</h3>
+            </a>
+
+        </div>
+    </div>
+
 <!-- SIGUIENTE-->
 
     <section id="home">

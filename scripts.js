@@ -112,3 +112,84 @@
             goToStep(stepFinal);
         });
     });
+
+// CARROUSEL
+
+        // Espera a que el DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // --- LÓGICA DEL CARRUSEL ---
+
+        const slidesContainer = document.querySelector('.carousel-slides');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const dots = document.querySelectorAll('.dot');
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        
+        // Función para ir a un slide específico
+        function goToSlide(index) {
+            // Mueve el contenedor de slides horizontalmente
+            slidesContainer.style.transform = `translateX(-${index * (100 / totalSlides)}%)`;
+
+            // Actualiza el punto activo
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+            
+            // Actualiza el índice actual
+            currentIndex = index;
+        }
+
+        // Event listener para el botón "Siguiente"
+        nextBtn.addEventListener('click', function() {
+            let nextIndex = currentIndex + 1;
+            if (nextIndex >= totalSlides) {
+                nextIndex = 0; // Vuelve al principio si está en el último
+            }
+            goToSlide(nextIndex);
+        });
+
+        // Event listener para el botón "Anterior"
+        prevBtn.addEventListener('click', function() {
+            let prevIndex = currentIndex - 1;
+            if (prevIndex < 0) {
+                prevIndex = totalSlides - 1; // Va al final si está en el primero
+            }
+            goToSlide(prevIndex);
+        });
+        
+        // Event listener para los puntos
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function() {
+                goToSlide(index);
+            });
+        });
+
+        // Inicializa el carrusel en el primer slide
+        goToSlide(0);
+    });
+
+// CARROUSEL
+
+    // Espera a que el DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // --- LÓGICA DEL WIDGET DE CONTACTO ---
+
+        const contactBubble = document.querySelector('.contact-bubble');
+        const contactForm = document.querySelector('.contact-form-container');
+        const closeFormBtn = document.querySelector('.close-form-btn');
+
+        // Muestra/oculta el formulario al hacer clic en la burbuja
+        contactBubble.addEventListener('click', function() {
+            contactForm.classList.toggle('open');
+        });
+
+        // Oculta el formulario al hacer clic en el botón de cerrar
+        closeFormBtn.addEventListener('click', function() {
+            contactForm.classList.remove('open');
+        });
+
+    });
